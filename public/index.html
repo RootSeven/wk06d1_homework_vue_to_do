@@ -14,14 +14,21 @@
             <h1>ToDo's</h1>
             <form v-on:submit.prevent="saveToDoItem">
                 <input type="text" id="new-to-do-item" v-model="newToDoItem" autocomplete="off" />
+
+                <input type="radio" name="priority" id="high-priority" value="High Priority" v-model="priority" >
+                <label for="high-priority">High</label>
+                <input type="radio" name="priority" id="low-priority" value="Low Priority" v-model="priority">
+                <label for="low-priority">Low</label>
+
                 <span><button>Save Item</button></span>
             </form>
         </div>
 
         <div id="to-do-list">
             <ul>
-                <li v-for="toDo in toDoList"> 
-                    {{ toDo }}
+                <li v-for="toDo in toDoList" :class="toDo.priority === 'High Priority' ? 'high-priority' : 'low-priority' "> 
+                    <span>{{ toDo.task }}</span> 
+                    <span>{{ toDo.priority }}</span>
                 </li>
             </ul>
         </div>

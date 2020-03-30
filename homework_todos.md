@@ -28,9 +28,9 @@ todos: [
 
 ## Extensions
 
-- Update the todos array to take in objects with keys of name and priority.
-- Add radio buttons to track the level of priority
-- Give the user visual feedback on what todos are high priority
+o Update the todos array to take in objects with keys of name and priority.
+o Add radio buttons to track the level of priority
+o Give the user visual feedback on what todos are high priority
 
 ## Setup
 

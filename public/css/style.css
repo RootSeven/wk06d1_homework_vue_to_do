@@ -1,6 +1,5 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
 }
 
 button {
@@ -22,6 +21,17 @@ li {
     list-style: none;
     border: solid green 3px;
     padding: 10px;
-    margin: 10px;
-    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.low-priority {
+    border: solid green 3px;
+}
+
+.high-priority {
+    border: solid red 3px;
 }
