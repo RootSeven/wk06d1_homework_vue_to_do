@@ -16,8 +16,8 @@ Use Vue and Webpack to build a solution that looks like this:
 
 ## MVP
 
-- Render a list of todos from an array of strings.  
-- Add the capability to add a new todo to the list.
+o Render a list of todos from an array of strings.  
+o Add the capability to add a new todo to the list.
 
 Your todos array would look something like:
 ```js

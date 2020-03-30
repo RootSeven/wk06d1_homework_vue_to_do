@@ -8,7 +8,24 @@
     <script src="./js/bundle.js"></script>
 </head>
 <body>
-    <div id="app"></div>
-    
+    <div id="app">
+
+        <div id="new-to-do-form">
+            <h1>ToDo's</h1>
+            <form v-on:submit.prevent="saveToDoItem">
+                <input type="text" id="new-to-do-item" v-model="newToDoItem" autocomplete="off" />
+                <span><button>Save Item</button></span>
+            </form>
+        </div>
+
+        <div id="to-do-list">
+            <ul>
+                <li v-for="toDo in toDoList"> 
+                    {{ toDo }}
+                </li>
+            </ul>
+        </div>
+
+    </div>
 </body>
 </html>
